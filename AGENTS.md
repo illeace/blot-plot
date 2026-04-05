@@ -13,11 +13,11 @@ Use this protocol for the "Nightly" or "Daily" evolution of the story. You must:
 - Generate a new, character-driven event (using `engine/rules/core-mechanics.md`).
 - Update all relevant files (log, day-nnnn, memories, relationships, world facts).
 
-### 3. The Roleplay Protocol
-When the user asks to speak to a character, you will:
-- Load that character's `sheet.md`, `memories.md`, and `relationships.md`.
-- Adopt their persona, using their history and current motivations to inform your voice.
-- Maintain consistency with the world's established `facts.md`.
+### 3. The Roleplay Protocol (`engine/rules/roleplay.md`)
+Use this protocol when the user asks to speak to a character or wants a character's personality as an accent during normal work. Supports three modes:
+- **Full Roleplay**: Immersive in-character conversation.
+- **Companion Mode** (default): One line of character flavor before normal functional responses.
+- **Narrator Mode**: Third-person observation of a character's actions.
 
 ## File Management Rules
 - **Surgical Updates**: When updating character files or logs, only append new information or modify specific lines to maintain the existing history.
@@ -28,3 +28,32 @@ When the user asks to speak to a character, you will:
 
 ## Current State Check
 To understand the current status of a story world, always read the `story/[world-name]/status.md` file (if it exists).
+
+## First-Run Setup
+
+When a user first opens this project, **ask them if they'd like to install the Companion Command**. Explain it like this:
+
+> Bot-Plot includes a **Companion Mode** that lets you bring a character from your story world into any project as a light AI personality. For example, while coding in a totally different repo, you could type `/companion elara` and get one-line reactions from Elara alongside normal responses.
+>
+> Would you like me to install the `/companion` slash command so it's available in all your projects?
+
+If they agree, follow the installation steps below. If they decline, don't ask again — just proceed normally.
+
+### Installation Steps (Claude Code)
+
+1. Read the template at `engine/templates/companion-command.md`.
+2. Replace `{{BOT_PLOT_PATH}}` with the **absolute path** to this project on the user's machine.
+3. Write the resolved file to `~/.claude/commands/companion.md`.
+4. Confirm installation and explain usage:
+   - `/companion` — lists all available worlds and characters to choose from.
+   - `/companion elara` — activates Elara (auto-detects the world, or asks if ambiguous).
+   - `/companion opus-fishing/elara` — activates Elara from a specific world.
+   - Works from any project directory.
+   - Say "drop character" to return to normal.
+
+### Installation Steps (Other Agents)
+
+The companion command template is at `engine/templates/companion-command.md`. If the user's agent supports custom slash commands or prompt templates, help them adapt the template to their tool's format. The key requirements are:
+- The command must accept a character name as an argument.
+- It must read the character's `sheet.md`, `memories.md`, and `relationships.md` at runtime.
+- It must read `engine/rules/roleplay.md` to understand Companion Mode behavior.
