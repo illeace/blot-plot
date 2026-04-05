@@ -1,14 +1,17 @@
 # Bot-Plot: World-Agnostic Character & Story System
 
-**Bot-Plot** is a framework for creating and evolving character-driven stories and LLM personas. This system is designed to be world-agnostic, providing a simple data structures and even loop for creating worlds, characters, and stories.
+Welcome to **Bot-Plot**, a framework for creating and evolving character-driven stories and LLM personas. This system is designed to be world-agnostic, providing the data structures and rules for any genre (Fantasy, Sci-Fi, etc.).
+
+> **LLM Agents**: If you are an AI agent loading this project, please read [AGENTS.md](AGENTS.md) first for your operational instructions.
 
 ## Project Structure
 
 - `engine/`: The core system files (the "Engine").
-  - `rules/`: Game mechanics and protocols.
+  - `rules/`: Game mechanics, event loop, and bootstrap protocols.
   - `templates/`: Markdown templates for all data types.
 - `story/`: Instance-specific world data (the "Save Games").
   - `[world-name]/`: A specific world "run".
+    - `status.md`: World dashboard (tracks characters and plot arcs).
     - `world/`: World and setting descriptions.
       - `world.md`: High-level world/genre description.
       - `setting.md`: Specific setting for this story.
@@ -21,6 +24,7 @@
     - `events/`: Logs of generated events.
       - `log.md`: A ledger describing the daily event(s) (one paragraph per event).
       - `day-nnnn.md`: Detailed daily event descriptions (e.g., day-0001.md).
+
 
 ## Getting Started
 
