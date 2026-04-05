@@ -1,6 +1,6 @@
 # Bot-Plot: World-Agnostic Character & Story System
 
-Welcome to **Bot-Plot**, a framework for creating and evolving character-driven stories and LLM personas. This system is designed to be world-agnostic, providing the data structures and rules for any genre (Fantasy, Sci-Fi, etc.).
+**Bot-Plot** is a framework for creating and evolving character-driven stories and LLM personas. This system is designed to be world-agnostic, providing a simple data structures and even loop for creating worlds, characters, and stories.
 
 ## Project Structure
 
@@ -20,7 +20,7 @@ Welcome to **Bot-Plot**, a framework for creating and evolving character-driven 
         - `relationships.md`: List of other characters and relationship description.
     - `events/`: Logs of generated events.
       - `log.md`: A ledger describing the daily event(s) (one paragraph per event).
-      - `dayX.md`: Detailed daily event descriptions (under 600 words).
+      - `day-nnnn.md`: Detailed daily event descriptions (e.g., day-0001.md).
 
 ## Getting Started
 
