@@ -13,7 +13,8 @@ Once the user provides the theme, create the following structure:
 1.  `story/[world-name]/world/`: Create `world.md`, `setting.md`, and `facts.md`.
 2.  `story/[world-name]/characters/`: Create folders for at least two starting characters, each with `sheet.md`, `memories.md`, and `relationships.md`.
 3.  `story/[world-name]/events/`: Create `log.md`.
-4.  `story/[world-name]/`: Create `status.md`.
+4.  `story/[world-name]/user-notes/`: Create this directory for the user's private notes (you MUST NOT read this).
+5.  `story/[world-name]/`: Create `status.md`.
 
 ## Phase 3: Content Generation
 - **World & Setting**: Populate `world.md` and `setting.md` based on the user's theme.

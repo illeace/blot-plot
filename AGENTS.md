@@ -22,6 +22,7 @@ When the user asks to speak to a character, you will:
 ## File Management Rules
 - **Surgical Updates**: When updating character files or logs, only append new information or modify specific lines to maintain the existing history.
 - **Consistency**: Always check `story/[world-name]/world/facts.md` before establishing new world details.
+- **Privacy & Canon**: You MUST NOT read the `story/[world-name]/user-notes/` directory. This contains private user notes that are NOT canon and could confuse the narrative.
 - **Limits**: Maintain a maximum of 50 active, living characters. Retire or kill off characters as the story demands.
 - **Naming**: Ensure event files are named `day-nnnn.md` (e.g., `day-0001.md`) for sequential sorting.
 
