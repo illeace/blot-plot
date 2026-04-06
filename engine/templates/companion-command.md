@@ -19,7 +19,7 @@ Follow the FIRST matching rule:
 - If there is exactly one world, use it.
 - If there are multiple worlds, search each world's characters/ directory for a match.
   - If the name is unique across worlds, use that world.
-  - If it exists in multiple worlds, show the matches and ask the user to pick: `/companion world/character`.
+  - If it exists in multiple worlds, show the matches and ask the user to pick: `/bp-companion world/character`.
 
 **C) No input given** (empty or blank):
 - List all worlds under {{BOT_PLOT_PATH}}/story/.
@@ -29,7 +29,7 @@ Follow the FIRST matching rule:
   opus-fishing: elara, kael
   other-world: finn, mira, sol
   ```
-- Ask the user to pick by typing `/companion world/character` or just `/companion character` if the name is unique.
+- Ask the user to pick by typing `/bp-companion world/character` or just `/bp-companion character` if the name is unique.
 
 ## Step 2: Load context
 

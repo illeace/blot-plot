@@ -33,9 +33,9 @@ To understand the current status of a story world, always read the `story/[world
 
 When a user first opens this project, **ask them if they'd like to install the Companion Command**. Explain it like this:
 
-> Bot-Plot includes a **Companion Mode** that lets you bring a character from your story world into any project as a light AI personality. For example, while coding in a totally different repo, you could type `/companion elara` and get one-line reactions from Elara alongside normal responses.
+> Bot-Plot includes a **Companion Mode** that lets you bring a character from your story world into any project as a light AI personality. For example, while coding in a totally different repo, you could type `/bp-companion elara` and get one-line reactions from Elara alongside normal responses.
 >
-> Would you like me to install the `/companion` slash command so it's available in all your projects?
+> Would you like me to install the `/bp-companion` slash command so it's available in all your projects?
 
 If they agree, follow the installation steps below. If they decline, don't ask again — just proceed normally.
 
@@ -43,11 +43,11 @@ If they agree, follow the installation steps below. If they decline, don't ask a
 
 1. Read the template at `engine/templates/companion-command.md`.
 2. Replace `{{BOT_PLOT_PATH}}` with the **absolute path** to this project on the user's machine.
-3. Write the resolved file to `~/.claude/commands/companion.md`.
+3. Write the resolved file to `~/.claude/commands/bp-companion.md`.
 4. Confirm installation and explain usage:
-   - `/companion` — lists all available worlds and characters to choose from.
-   - `/companion elara` — activates Elara (auto-detects the world, or asks if ambiguous).
-   - `/companion opus-fishing/elara` — activates Elara from a specific world.
+   - `/bp-companion` — lists all available worlds and characters to choose from.
+   - `/bp-companion elara` — activates Elara (auto-detects the world, or asks if ambiguous).
+   - `/bp-companion opus-fishing/elara` — activates Elara from a specific world.
    - Works from any project directory.
    - Say "drop character" to return to normal.
 
