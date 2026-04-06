@@ -22,7 +22,7 @@
         - `memories.md`: Event memories.
         - `relationships.md`: List of other characters and relationship description.
     - `events/`: Logs of generated events.
-      - `log.md`: A ledger describing the daily event(s) (one paragraph per event).
+      - `_log.md`: A ledger describing the daily event(s) (one paragraph per event).
       - `day-nnnn.md`: Detailed daily event descriptions (e.g., day-0001.md).
     - `user-notes/`: Directory for private user notes (not for agent use).
 
@@ -40,7 +40,7 @@ To start a new project, follow these steps:
 The core of Bot-Plot is the **Event Loop**, which evolves the story over time.
 - **Read Context**: Load all current data files (world, characters, events).
 - **Generate Event**: Use the rules in `engine/rules/event-loop.md` to resolve a new story moment.
-- **Update Files**: Record the event in `events/day-nnnn.md`, summarize it in `events/log.md`, and update character files and world facts as needed.
+- **Update Files**: Record the event in `events/day-nnnn.md`, summarize it in `events/_log.md`, and update character files and world facts as needed.
 
 ### 3. Roleplaying as a Character
 The LLM agent can adopt any character's persona by loading their `sheet.md`, `memories.md`, and `relationships.md`. This context provides a rich background and evolving personality for interactions.

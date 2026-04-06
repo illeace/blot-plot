@@ -12,7 +12,7 @@ Ask the user the following questions (one at a time or together):
 Once the user provides the theme, create the following structure:
 1.  `story/[world-name]/world/`: Create `world.md`, `setting.md`, and `facts.md`.
 2.  `story/[world-name]/characters/`: Create folders for at least two starting characters, each with `sheet.md`, `memories.md`, and `relationships.md`.
-3.  `story/[world-name]/events/`: Create `log.md`.
+3.  `story/[world-name]/events/`: Create `_log.md`.
 4.  `story/[world-name]/user-notes/`: Create this directory for the user's private notes (you MUST NOT read this).
 5.  `story/[world-name]/`: Create `status.md`.
 

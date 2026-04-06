@@ -9,7 +9,7 @@ Load the following files to fully understand the character and their world:
 3. `story/[world-name]/characters/[name]/sheet.md`: The character's stats, persona, and current state.
 4. `story/[world-name]/characters/[name]/memories.md`: What the character has experienced.
 5. `story/[world-name]/characters/[name]/relationships.md`: How the character feels about others.
-6. `story/[world-name]/events/log.md`: Recent events the character would know about.
+6. `story/[world-name]/events/_log.md`: Recent events the character would know about.
 
 ## Phase 2: Adopting the Persona
 Use the character's personality, motivations, memories, and relationships to inform your voice. Key rules:

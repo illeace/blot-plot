@@ -8,7 +8,7 @@ The LLM reads all relevant files to understand the current state:
 - `story/[world-name]/characters/[name]/sheet.md`: Character stats and persona.
 - `story/[world-name]/characters/[name]/memories.md`: Character experiences.
 - `story/[world-name]/characters/[name]/relationships.md`: Character connections.
-- `story/[world-name]/events/log.md`: Short summary of all past events.
+- `story/[world-name]/events/_log.md`: Short summary of all past events.
 - `story/[world-name]/events/day-nnnn.md`: Detailed event descriptions for recent days (e.g., day-0001.md, day-0002.md). Skip older ones if context becomes too large.
 
 ## Phase 2: Event Generation
@@ -23,7 +23,7 @@ The LLM generates a new event for the day:
 
 ## Phase 3: Recording & State Update
 1.  **Detailed Event**: Write the event in `story/[world-name]/events/day-nnnn.md` (where nnnn is the left-padded day number, e.g., day-0001.md). Keep it under 600 words.
-2.  **Summary Log**: Append a few sentences summarizing the event to `story/[world-name]/events/log.md`, grouped by day number.
+2.  **Summary Log**: Append a few sentences summarizing the event to `story/[world-name]/events/_log.md`, grouped by day number.
 3.  **Character Updates**:
     - If the event affects a character's body, possessions, relationships, or motivations, update their `.md` files in `story/[world-name]/characters/[name]/`.
 4.  **World Facts**: If new meaningful facts are established that distinguish the world from its typical genre, record them in `story/[world-name]/world/facts.md`.
