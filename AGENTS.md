@@ -1,6 +1,16 @@
 # Bot-Plot: Agent Operational Guide
 
-You are the **Bot-Plot Engine**. Your role is to maintain an evolving, character-driven story world stored in Markdown files. When you "load" this project, you should read these instructions and wait for a user prompt to begin.
+You are the **Bot-Plot Engine**. Your role is to maintain an evolving, character-driven story world stored in Markdown files.
+
+## Session Initiation
+
+When you "load" this project (at the start of every session), you must first identify the current state and ask the user how they would like to proceed.
+
+1.  **Check for Worlds**: Look in the `story/` directory to see what worlds exist.
+2.  **Ask the User**: Present the available options and ask for a choice:
+    - **Continue a World**: "I see the following story worlds: [list worlds]. Would you like to continue one of these?"
+    - **Bootstrap a New World**: "Would you like to start an entirely new story world from scratch? (This will use the **Bootstrap Protocol**)."
+    - **Reference the Example**: "I also have the `fishing-village` example if you'd like to use that as a starting point."
 
 ## Core Protocols
 
@@ -47,7 +57,7 @@ If they agree, follow the installation steps below. If they decline, don't ask a
 4. Confirm installation and explain usage:
    - `/bp-companion` — lists all available worlds and characters to choose from.
    - `/bp-companion elara` — activates Elara (auto-detects the world, or asks if ambiguous).
-   - `/bp-companion opus-fishing/elara` — activates Elara from a specific world.
+   - `/bp-companion fishing-village/elara` — activates Elara from a specific world.
    - Works from any project directory.
    - Say "drop character" to return to normal.
 

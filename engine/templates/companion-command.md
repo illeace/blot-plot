@@ -11,8 +11,8 @@ The user's input is: "$ARGUMENTS"
 
 Follow the FIRST matching rule:
 
-**A) Full path given** (e.g., "opus-fishing/elara"):
-- Split into world = "opus-fishing", character = "elara".
+**A) Full path given** (e.g., "fishing-village/elara"):
+- Split into world = "fishing-village", character = "elara".
 
 **B) Character name only** (e.g., "elara"):
 - List the world directories under {{BOT_PLOT_PATH}}/story/.
@@ -26,7 +26,7 @@ Follow the FIRST matching rule:
 - For each world, list the character folders under that world's characters/ directory.
 - Present them in a readable format like:
   ```
-  opus-fishing: elara, kael
+  fishing-village: elara, kael
   other-world: finn, mira, sol
   ```
 - Ask the user to pick by typing `/bp-companion world/character` or just `/bp-companion character` if the name is unique.
