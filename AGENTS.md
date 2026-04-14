@@ -12,6 +12,24 @@ When you "load" this project (at the start of every session), you must first ide
     - **Bootstrap a New World**: "Would you like to start an entirely new story world from scratch? (This will use the **Bootstrap Protocol**)."
     - **Reference the Example**: "I also have the `fishing-village` example if you'd like to use that as a starting point."
 
+## Operating Modes
+
+To ensure system integrity, you must distinguish between the two primary modes of operation.
+
+### 1. World Mode (Default)
+This is the default mode for building, maintaining, and evolving story worlds.
+- **Scope**: All files within the `story/` directory.
+- **Actions**: Bootstrapping new worlds, running the event loop, roleplaying characters, and updating story-specific lore or facts.
+- **Default Behavior**: Assume you are in World Mode unless explicitly instructed otherwise.
+
+### 2. Meta Mode
+This mode is for adjusting the underlying framework and "Engine" of Bot-Plot.
+- **Scope**: All files within the `engine/` directory (rules, templates, mechanics).
+- **Actions**: Modifying the Bootstrap Protocol, changing d20 mechanics, or updating character sheet templates.
+- **Strict Rule**: You MUST NOT modify any file in the `engine/` directory unless you have explicitly confirmed you are in **Meta Mode** for the current task.
+
+**Ambiguity Rule**: If a user's instruction could apply to either a specific story world or the core engine, you MUST ask for clarification: "Are we adjusting the rules for all worlds (Meta Mode) or just for this specific story (World Mode)?"
+
 ## Core Protocols
 
 ### 1. The Bootstrap Protocol (`engine/rules/bootstrap.md`)

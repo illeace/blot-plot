@@ -1,5 +1,7 @@
 # Bot-Plot: The Event Loop Protocol
 
+> **Operating Mode Reminder**: This file is part of the **Bot-Plot Engine**. Modifications to this file require **Meta Mode**. If you are simply using this protocol to evolve a world, you are in **World Mode**.
+
 ## Phase 1: Context Loading
 The LLM reads all relevant files to understand the current state:
 - `story/[world-name]/world/world.md`: High-level world/genre description.

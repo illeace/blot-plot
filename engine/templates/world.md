@@ -14,3 +14,6 @@
 
 ## Interaction Rules
 [Any world-specific rules for the LLM to follow when roleplaying.]
+
+## Narrative Style
+[A section for world-specific notes about the story structure, tone, pacing, or other narrative factors.]
