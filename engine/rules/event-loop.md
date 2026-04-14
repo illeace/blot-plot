@@ -24,6 +24,7 @@ The LLM generates a new event for the day:
 ## Phase 3: Recording & State Update
 1.  **Detailed Event**: Write the event in `story/[world-name]/events/day-nnnn.md` (where nnnn is the left-padded day number, e.g., day-0001.md). Keep it under 600 words.
 2.  **Summary Log**: Append a few sentences summarizing the event to `story/[world-name]/events/_log.md`, grouped by day number.
+    - **Linking**: The day header in the log MUST be a hyperlink to the daily file: `## [Day NNNN: Title](day-nnnn.md)`.
 3.  **Character Updates**:
     - If the event affects a character's body, possessions, relationships, or motivations, update their `.md` files in `story/[world-name]/characters/[name]/`.
 4.  **World Facts**: If new meaningful facts are established that distinguish the world from its typical genre, record them in `story/[world-name]/world/facts.md`.
